@@ -1,7 +1,7 @@
 # dotfiles
 Permissions:
 ```terminal
-chmod +x script-name-here.sh
+chmod +x install.sh
 ```
 To run the script, enter:
 ./install.sh
