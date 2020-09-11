@@ -8,4 +8,8 @@ cp ~/.bashrc .bashrc
 echo -e "Coping \e[34m.bash_profile"
 cp ~/.bash_profile .bash_profile
 
-echo -e "Remember to push the modifications"
+echo -e "Pushing mods"
+
+git add .
+git commit -m "update scripts"
+git push origin master
