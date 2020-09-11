@@ -1,16 +1,18 @@
 # dotfiles
+Before everything
+
 Permissions:
 ```terminal
-chmod +x install.sh
+chmod +x setup.sh
 ```
 To run the script, enter:
-./install.sh
+./setup.sh
 
 Another option is as follows to execute shell script:
 ```terminal
-sh install.sh
+sh setup.sh
 ```
 or
 ```terminal
-bash install.sh
+bash setup.sh
 ```

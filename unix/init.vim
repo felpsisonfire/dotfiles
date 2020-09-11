@@ -11,6 +11,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot'
 Plug 'preservim/nerdtree'
 Plug 'sainnhe/edge'
+Plug 'lervag/vimtex'
 call plug#end()
 
 if has('termguicolors')
