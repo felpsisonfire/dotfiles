@@ -12,3 +12,4 @@ export PATH="$PATH:/usr/lib/dart/bin"
 
 alias dev='cd ~/dev/'
 alias learn='cd ~/learn/'
+alias windows='cd /mnt/c/Users/felip'
