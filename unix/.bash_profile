@@ -13,5 +13,5 @@ export PATH="$PATH:~/dev/dotfiles/unix/"
 
 alias dev='cd ~/dev/'
 alias learn='cd ~/learn/'
-alias windows='cd ~/mnt/c/dev'
+alias windows='cd /mnt/c/dev'
 alias dotupdate='cd ~/dev/dotfiles/unix/'
