@@ -9,6 +9,7 @@ mkdir ~/.config/nvim
 # Copy the .bashrc and .bash_profile to the root
 sudo cp ../.bashrc ~/.bashrc
 sudo cp ../.bash_profile ~/.bash_profile
+cp  ../.zshrc ~/.zshrc
 
 # Copy the vim.init file to the path
 cp init.vim ~/.config/nvim/init.vim
