@@ -9,7 +9,14 @@ mkdir ~/.config/nvim
 # Copy the .bashrc and .bash_profile to the root
 sudo cp ../.bashrc ~/.bashrc
 sudo cp ../.bash_profile ~/.bash_profile
-cp  ../.zshrc ~/.zshrc
+sudo cp  ../.zshrc ~/.zshrc
+cp create.sh ~/create.sh
+
+# Giving permissions to the question create script 
+chmod +x create.sh
+
+# Giving update permissions
+chmod +x update.sh
 
 # Copy the vim.init file to the path
 cp init.vim ~/.config/nvim/init.vim

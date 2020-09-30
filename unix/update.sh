@@ -11,6 +11,9 @@ cp ~/.bash_profile .bash_profile
 echo -e "Coping \e[34m.zshrc"
 cp ~/.zshrc .zshrc
 
+echo -e "Coping Question generator script"
+cp ~/create.sh create.sh
+
 echo -e "Pushing mods"
 
 git add .
