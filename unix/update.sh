@@ -1,20 +1,13 @@
-echo -e "Coping atual configuration to the repository"
 echo -e "Coping \e[34minit.vim"
 cp ~/.config/nvim/init.vim init.vim
-
-echo -e "Coping \e[34m.bashrc"
-cp ~/.bashrc .bashrc
-
-echo -e "Coping \e[34m.bash_profile"
-cp ~/.bash_profile .bash_profile
-
-echo -e "Coping \e[34m.zshrc"
-cp ~/.zshrc .zshrc
 
 echo -e "Coping Question generator script"
 cp ~/create.sh create.sh
 
-echo -e "Pushing mods"
+echo -e "Coping i3 config file"
+cp ~/.config/i3/config
+
+echo -e "Pushing modifications"
 
 git add .
 git commit -m "update scripts"

@@ -1,7 +1,9 @@
 # Creating the nvim directory
 echo -e "Creating Dev and Learn Directories"
 mkdir ~/dev/
-mkdir ~/learn/
+mkdir ~/dev/work
+mkdir ~/dev/fun
+mkdir ~/dev/science
 
 echo -e "Creating Nvim Directory"
 mkdir ~/.config/nvim
