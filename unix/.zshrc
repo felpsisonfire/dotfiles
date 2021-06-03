@@ -1,11 +1,10 @@
+(cat ~/.cache/wal/sequences &)
+#
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-# o
 
-cd ~
 # Path to your oh-my-zsh installation.
 export ZSH="/home/felps/.oh-my-zsh"
-source ~/.bash_profile
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -48,6 +47,8 @@ ZSH_THEME="robbyrussell"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
+# Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
+# See https://github.com/ohmyzsh/ohmyzsh/issues/5765
 # COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
@@ -72,7 +73,6 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
-plugins=(zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,9 +101,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
-alias dev='cd ~/dev/'
-alias learn='cd ~/learn/'
-alias windows='cd /mnt/c/dev'
-alias drive='cd /mnt/c/Users/felip/Google\ Drive/'
-alias dotfiles='cd /home/felps/dev/projects/dotfiles'
+
+alias zshconfig="sudo vim ~/.zshrc"
+alias i3config="sudo vim ~/.config/i3/config"
+alias nvimconfig="sudo vim ~/.config/nvim/init.vim"
+
+alias predpay="cd ~/dev/work/predpay/"
+alias fun="cd ~/dev/fun/"
+alias science="cd ~/dev/science"
