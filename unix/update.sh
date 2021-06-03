@@ -5,7 +5,7 @@ echo -e "Coping Question generator script"
 cp ~/create.sh create.sh
 
 echo -e "Coping i3 config file"
-cp ~/.config/i3/config
+cp ~/.config/i3/config config
 
 echo -e "Pushing modifications"
 
