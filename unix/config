@@ -3,12 +3,13 @@
 
 gaps inner 10
 gaps outer 5
-gaps top 50
+gaps top 55
 set $mod Mod1
 
 # Volume controll
 #
 
+bindsym $mod+Escape exec $HOME/.config/polybar/material/scripts/powermenu.sh &
 bindsym $mod+8 exec $HOME/.screenlayout/2monitors.sh
 bindsym $mod+9 exec $HOME/.screenlayout/1monitor.sh
 bindsym $mod+plus exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
