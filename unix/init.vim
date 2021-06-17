@@ -65,14 +65,14 @@ nmap <silent>gd <Plug>(coc-definitions)
 nmap <silent>gr <Plug>(coc-references)
 nmap <silent>g[ <Plug>(coc-diagnostic-next)
 nmap <silent>g] <Plug>(coc-diagnostic-prev)
-nmap <silent>gj <Plug>(coc-diagnostic-next-error)
-nmap <silent>gk <Plug>(coc-diagnostic-prev-error)
+nmap <silent>gn <Plug>(coc-diagnostic-next-error)
+nmap <silent>gp <Plug>(coc-diagnostic-prev-error)
 vmap <silent>gd <Plug>(coc-definitions)
 vmap <silent>gr <Plug>(coc-references)
 vmap <silent>g[ <Plug>(coc-diagnostic-next)
 vmap <silent>g] <Plug>(coc-diagnostic-prev)
-vmap <silent>gj <Plug>(coc-diagnostic-next-error)
-vmap <silent>gk <Plug>(coc-diagnostic-prev-error)
+vmap <silent>gn <Plug>(coc-diagnostic-next-error)
+vmap <silent>gp <Plug>(coc-diagnostic-prev-error)
 
 nnoremap <C-g> :GFiles<CR>
 ":Files 
@@ -100,12 +100,13 @@ inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
 
-"############################   FLUTTER DEV 
-
+"############################   CODE ACTIONS 
 nmap <C-a> <Plug>(coc-codeaction-selected) 
 xmap <C-a> <Plug>(coc-codeaction-selected) 
+
+"############################   FLUTTER DEV 
 nmap <C-x> :CocList FlutterEmulators<CR> 
-nmap <C-f> :CocCommnad flutter.run
+nmap <C-f> :CocCommand flutter.run<CR>
 nmap <C-d> :CocCommand flutter.devices<CR> 
 nmap <C-q> :CocCommand flutter.dev.quit<CR>
 nmap <C-s> :CocCommand flutter.dev.hotRestart<CR> 
