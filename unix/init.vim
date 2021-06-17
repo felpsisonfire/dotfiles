@@ -57,23 +57,22 @@ nnoremap <C-e> :NERDTreeToggle<CR>
 "############################   COPY PASTE KEYMAPS 
 nnoremap <C-c> "+y
 vnoremap <C-c> "+y
-nnoremap <C-p> "+p
-vnoremap <C-p> "+p
+nnoremap <C-v> "+p
+vnoremap <C-v> "+p
 
 "############################   JUMPTO KEYMAPS 
 nmap <silent>gd <Plug>(coc-definitions)
 nmap <silent>gr <Plug>(coc-references)
-nmap <silent>gj <Plug>(coc-diagnostic-next)
-nmap <silent>gk <Plug>(coc-diagnostic-prev)
-nmap <silent>[g <Plug>(coc-diagnostic-next-error)
-nmap <silent>]g <Plug>(coc-diagnostic-prev-error)
+nmap <silent>g[ <Plug>(coc-diagnostic-next)
+nmap <silent>g] <Plug>(coc-diagnostic-prev)
+nmap <silent>gj <Plug>(coc-diagnostic-next-error)
+nmap <silent>gk <Plug>(coc-diagnostic-prev-error)
 vmap <silent>gd <Plug>(coc-definitions)
 vmap <silent>gr <Plug>(coc-references)
-vmap <silent>gj <Plug>(coc-diagnostic-next)
-vmap <silent>gk <Plug>(coc-diagnostic-prev)
-vmap <silent>[g <Plug>(coc-diagnostic-next-error)
-vmap <silent>]g <Plug>(coc-diagnostic-prev-error)
-
+vmap <silent>g[ <Plug>(coc-diagnostic-next)
+vmap <silent>g] <Plug>(coc-diagnostic-prev)
+vmap <silent>gj <Plug>(coc-diagnostic-next-error)
+vmap <silent>gk <Plug>(coc-diagnostic-prev-error)
 
 nnoremap <C-g> :GFiles<CR>
 ":Files 
@@ -92,10 +91,22 @@ endfunction
 
 "############################   SUGGESTIONS/AUTOCOMPLETE KEYMAPS 
 inoremap <silent><expr> <c-space> coc#refresh()
-nmap <C-/> <plug>NERDCommenterToggle
-vmap <C-/> <plug>NERDCommenterToggle
+nmap <C-m> <plug>NERDCommenterToggle
+vmap <C-m> <plug>NERDCommenterToggle
 
 "############################   NAVIGATION AND SELECTION 
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+
+
+"############################   FLUTTER DEV 
+
+nmap <C-a> <Plug>(coc-codeaction-selected) 
+xmap <C-a> <Plug>(coc-codeaction-selected) 
+nmap <C-x> :CocList FlutterEmulators<CR> 
+nmap <C-f> :CocCommnad flutter.run
+nmap <C-d> :CocCommand flutter.devices<CR> 
+nmap <C-q> :CocCommand flutter.dev.quit<CR>
+nmap <C-s> :CocCommand flutter.dev.hotRestart<CR> 
+nmap <C-b> :CocCommand flutter.dev.openDevToolsProfiler<CR>
