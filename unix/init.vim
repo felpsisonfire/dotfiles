@@ -52,6 +52,16 @@ syntax enable
 autocmd FileType dart setlocal shiftwidth=2 tabstop=2 expandtab noautoindent 
 let g:dart_format_on_save = 1
 
+"############################  SYNASTIC CONFIG 
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
 "############################   PLUGINS KEYMAPS 
 nnoremap <C-e> :NERDTreeToggle<CR>
 
