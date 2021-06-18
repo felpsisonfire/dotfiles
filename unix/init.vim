@@ -7,6 +7,7 @@ Plug 'dart-lang/dart-vim-plugin'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
+Plug 'vim-syntastic/syntastic'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -74,6 +75,7 @@ vmap <silent>g] <Plug>(coc-diagnostic-prev)
 vmap <silent>gn <Plug>(coc-diagnostic-next-error)
 vmap <silent>gp <Plug>(coc-diagnostic-prev-error)
 
+"############################   SEARCH KEYMAPS 
 nnoremap <C-g> :GFiles<CR>
 ":Files 
 ":GFiles
@@ -99,8 +101,8 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 
-
 "############################   CODE ACTIONS 
+nnoremap <Leader><space> :noh<cr>
 nmap <C-a> <Plug>(coc-codeaction-selected) 
 xmap <C-a> <Plug>(coc-codeaction-selected) 
 
