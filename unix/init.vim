@@ -8,6 +8,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-syntastic/syntastic'
+Plug 'mhinz/vim-startify'
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -123,3 +124,4 @@ nmap <C-d> :CocCommand flutter.devices<CR>
 nmap <C-q> :CocCommand flutter.dev.quit<CR>
 nmap <C-s> :CocCommand flutter.dev.hotRestart<CR> 
 nmap <C-b> :CocCommand flutter.dev.openDevToolsProfiler<CR>
+
