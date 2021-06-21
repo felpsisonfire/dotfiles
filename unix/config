@@ -53,10 +53,10 @@ bindsym $mod+Shift+s exec --no-startup-id maim --select "/home/$USER/Pictures/sc
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty 
+bindsym $mod+1 exec alacritty 
 
 # kill focused window
-bindsym $mod+Shift+1 kill
+bindsym $mod+Shift+d kill
 
 # power menu
 #
@@ -207,8 +207,8 @@ exec_always --no-startup-id alacritty-colorscheme -V $HOME/install/alacritty-mas
 exec_always --no-startup-id $HOME/.screenlayout/1monitor.sh
 
 ######################################### WALLPAPER
-exec_always --no-startup-id feh --bg-tile "$HOME/Pictures/wallpapers/wallpaper4.png" 
-exec_always --no-startup-id ~/.config/polybar/material/scripts/pywal.sh ~/Pictures/wallpapers/wallpaper4.png" 
+exec_always --no-startup-id feh --bg-tile "$HOME/Pictures/wallpapers/wallpaper9.png" 
+exec_always --no-startup-id ~/.config/polybar/material/scripts/pywal.sh ~/Pictures/wallpapers/wallpaper9.png" 
 exec_always --no-startup-id fcitx5 -d &
 
 new_window 1pixel

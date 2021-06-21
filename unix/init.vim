@@ -111,6 +111,7 @@ vmap <C-m> <plug>NERDCommenterToggle
 inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+nmap <C-space> :noh<CR>
 
 "############################   CODE ACTIONS 
 nnoremap <Leader><space> :noh<cr>
